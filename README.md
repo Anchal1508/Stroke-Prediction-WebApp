@@ -8,6 +8,8 @@
 • Folder link for __Code__, __Algorithms used__ and __Accuracy__ of the model.. Click the link mentioned below for the same:<br />
 Link:  [github.com/Anchal1508/Machine-Learning-Projects/Stroke Prediction/](https://github.com/Anchal1508/Machine-Learning-Projects/tree/main/Stroke%20Prediction)
 
+• Link for WebApp, you can visit : [stroke-prediction-webapp](https://strokeprediction-webapp.herokuapp.com/)
+
 • A glimpse of the web app:
 
 1 . GUI interface 
