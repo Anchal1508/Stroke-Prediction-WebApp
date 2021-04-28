@@ -8,11 +8,11 @@ classifier = pickle.load(filename)
 filename.close()
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=['POST','GET'])
 def home():
 	return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['POST','GET'])
 def predict():
     
     if request.method == 'POST':
