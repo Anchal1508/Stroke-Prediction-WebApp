@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Diabetes Predictor</title>
+    <title>Stroke Predictor</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='stroke-favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
@@ -24,58 +24,69 @@
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
           <br><br>
-          <select class="form-input align-center" name="gender">
+          <label for="gender">Gender </label>
+          <select required class="form-input align-center" name="gender" >
             <option value="none">--- Select Gender ---</option>
             <option value="1">Male</option>
             <option value="0">Female</option>
-          </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </select> <br>
 
-          <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 47"><br><br>
-
-          <select class="form-input align-center" name="hypertension">
-            <option value="none">--- Do you have hypertension ---</option>
+          <label for="hypertension">Do you have hypertension ? </label>
+          <select class="form-input align-center" name="hypertension" required="required">
+            <option value="none">--- Select option  ---</option>
             <option value="1">Yes</option>
             <option value="0">No</option>
-          </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </select><br>
 
-          <select class="form-input align-center" name="heart">
-            <option value="none">--- Do you have heart-disease ---</option>
+          <label for="heart">Do you have heart-disease ? </label>
+          <select class="form-input align-center" name="heart" required>
+            <option value="none">--- Select option ---</option>
             <option value="1">Yes</option>
             <option value="0">No</option>
-          </select><br><br>
+          </select><br>
 
-          <select class="form-input align-center" name="married">
-            <option value="none">--- Did you Married ? ---</option>
+          <label for="married">Did you Married ? </label>
+          <select class="form-input align-center" name="married" required>
+            <option value="none">--- Select option ---</option>
             <option value="1">Yes</option>
             <option value="0">No</option>
-          </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </select><br>
 
-          <select class="form-input align-center" name="work">
-            <option value="none">--- Select your type of work ---</option>
+          <label for="work">Select your work category type </label>
+          <select class="form-input align-center" name="work" required>
+            <option value="none">--- Select option ---</option>
             <option value="0">Government job</option>
             <option value="1">Never Worked</option>
             <option value="2">Private</option>
             <option value="3">Self Employed</option>
-          </select><br><br>
+          </select><br>
 
-          <select class="form-input align-center" name="residence">
-            <option value="none">--- Select Your Residence area ---</option>
+          <label for="work">Select Your Residence area </label>
+          <select class="form-input align-center" name="residence" required>
+            <option value="none">--- Select option ---</option>
             <option value="0">Rural</option>
             <option value="1">Urban</option>
-          </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </select><br>
 
-          <input class="form-input" type="text" name="glucose" placeholder="Glucose level eg. 95.12"><br><br>
-
-          <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <select class="form-input align-center" name="smoking">
-            <option value="none">---Select Your Smoking Status ---</option>
+          <label for="work">Select Your Smoking Status </label>
+          <select class="form-input align-center" name="smoking" required>
+            <option value="none">---Select option ---</option>
             <option value="0">Unknown</option>
             <option value="1">Formarly smoked</option>
             <option value="2">Never Smoked</option>
             <option value="3">Smokes</option>
-          </select><br><br>
+          </select><br>
+
+          <label for="age">Enter Age </label>
+          <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 47"  required><br>
+
+          <label for="work">Enter Glucose level of body </label>
+          <input class="form-input" type="text" name="glucose" placeholder="Glucose level eg. 95.12" required><br>
+
+          <label for="work">Enter BMI </label>
+          <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1" required><br>
+
+          <br>
         	<input type="submit" class="my-cta-button" value="Predict">
         	</form>
     	</div>
@@ -83,7 +94,7 @@
         <!-- Footer -->
        <div class='footer'>
            <div class="contact">
-               <a target="_blank" href="https://github.com/Anchal1508/Python-Projects"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://github.com/Anchal1508/"><i class="fab fa-github fa-lg contact-icon"></i></a>
                <a target="_blank" href="https://www.linkedin.com/in/anchal15/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
            </div>
            <p class='footer-description'>Made with ❤️ by Anchal Gupta.</p>
