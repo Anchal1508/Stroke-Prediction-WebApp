@@ -6,7 +6,7 @@
 • The WebApp is created to predict whether a person is having Stroke disease or not.
 
 • Folder link for __Code__, __Algorithms used__ and __Accuracy__ of the model.. Click the link mentioned below for the same:<br />
-Link:  [github.com/Anchal1508/Machine-Learning-Projects/Stroke Prediction/](https://github.com/Anchal1508/Machine-Learning-Projects/tree/main/Stroke%20Prediction)
+Link:  [github.com/Anchal1508/Stroke Prediction webapp/](https://github.com/Anchal1508/Stroke-Prediction-WebApp)
 
 • Link for WebApp, you can visit : [stroke-prediction-webapp](https://strokeprediction-webapp.herokuapp.com/)
 
